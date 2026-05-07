@@ -1,0 +1,301 @@
+ @import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100..900&display=swap');
+  /* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Anybody', sans-serif;
+  background: #f3e7d3;
+}
+
+/* nav */
+.navbar {
+ background: #b8793c;
+ display: flex;
+ justify-content: space-between;
+ padding: 10px 20px;
+ align-items: center;
+}
+.logo {
+    width: 120px;
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    
+}
+
+.menu .active {
+    border-bottom: 2px solid black;
+}
+
+.icons img {
+    width: 25px;
+    margin-left: 15px;
+}
+.icons a{
+  text-decoration: none;
+  color: #000;
+}
+.icons img a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* CONTAINER */
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    gap: 100px;
+}
+
+/* BANNER */
+.banner {
+   opacity: 85%;
+   position: relative;
+    width: 100%;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    background-image: url("C:\Users\50385758898\Desktop\Café Fauna- Login 1\Café Fauna- Login\Café Fauna- Login\imagens");
+    display: block;
+    opacity: 0.95;
+}
+
+/* SOBRE */
+.caixa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 100px);
+  gap: 100px;
+}
+
+.informacoes {
+  max-width: 60%;
+  min-height: 200px;          
+  margin: 50px auto;
+ background:#EBE3CA;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  font-family: 'Anybody', sans-serif;
+  font-weight: 400;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.informacoes:hover {
+    transform: scale(1.05); /* aumenta 5% */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.sobre {
+    background-color:#f3e7d3;
+    text-align: center;
+    padding: 40px 20px;
+   font-weight: 300;
+  letter-spacing: 1px; /* espaçamento entre letras */
+}
+.sobre h2 {
+    margin-bottom: 10px;
+}
+
+.sobre hr {
+  width: 60%;
+  height: 4px;
+  background: #f3e7d3;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.5),
+              inset 0 -2px 4px rgba(255,255,255,0.6);
+  margin: 20px auto;
+  border-radius: 2px;
+  background-color: #FFF7DD;
+}
+
+
+.sobre h3 {
+    margin: 20px 0;
+}
+
+.sobre p {
+    max-width:600px;
+    margin: 20px auto;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* VÍDEO */
+.cardvideo  {
+  max-width: 70%;
+  margin: 50px auto;
+  background: #EBE3CA;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover */
+.cardvideo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.cardvideo {
+  width: 100%;
+  border-radius: 12px;
+  outline: none;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    line-height: 0;
+}
+
+.cardvideo video {
+    width: 80%;    
+  max-width: 500px;
+  border-radius: 12px;
+  outline: none;
+}
+.cardvideo video {
+  aspect-ratio: 16 / 9;   /* proporção padrão de vídeo */
+  overflow: hidden;
+}
+
+.cardvideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* ajusta sem distorcer */
+  border-radius: 12px;
+}
+
+/* FOOTER */
+footer{
+  background:#dcc29f;
+  padding:22px 15px;
+  margin-top:0px;
+  border: none;
+}
+.footer-inner{
+  padding: 0 15px;
+}
+.beneficios{
+display:flex;
+justify-content:space-around;
+align-items:center;
+gap:15px;
+margin-bottom:18px;
+flex-wrap:wrap;
+}
+
+.item{
+display:flex;
+align-items:center;
+gap:10px;
+max-width:250px;
+}
+
+.item img{
+width:38px;
+height:38px;
+object-fit:contain;
+}
+
+.item strong{
+font-size:16px;
+font-weight:500;
+display:block;
+}
+
+.item p{
+font-size:11px;
+margin-top:2px;
+}
+hr {
+  border: none;
+  height: 1px;
+  background: #000;  
+  margin: 10px 0;    
+}
+
+.footer-conteudo{
+display:flex;
+justify-content:space-around;
+gap:30px;
+font-size:12px;
+flex-wrap:wrap;
+}
+
+.footer-conteudo h3{
+font-size:16px;
+font-weight:500;
+margin-bottom:10px;
+}
+
+.footer-conteudo p{
+margin-bottom:6px;
+}
+
+.icones{
+display:flex;
+gap:15px;
+margin-top:12px;
+align-items:center;
+}
+
+.icones a{
+  text-decoration: none;
+  color: #000;
+}
+.icones img{
+width:32px;
+height:32px;
+object-fit:contain;
+cursor:pointer;
+transition:0.3s;
+}
+
+.icones img:hover{
+transform:scale(1.1);
+}
+
+@media(max-width:700px){
+
+.logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:50%;
+display:block;
+}
+
+.beneficios,
+.footer-conteudo{
+flex-direction:column;
+text-align:center;
+}
+
+.item{
+justify-content:center;
+}
+
+}
+

@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100..900&display=swap');
+
+/* RESET */*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONTE GLOBAL */
+body {
+    font-family: 'Anybody', sans-serif;
+    background-color: #FDF2D9;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #BD7D43;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.menu .active {
+    border-bottom: 2px solid black;
+}
+
+.icons a{
+     text-decoration: none;
+    color: #000;
+}
+
+.icons img {
+    width: 25px;
+    margin-left: 15px;
+}
+.icons img a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+/* CONTAINER */
+.container{
+max-width:1100px;
+margin:auto;
+padding:30px 20px 60px;
+}
+
+/* TOPO */
+.topo-carrinho{
+background:#e5ccaa;
+padding:12px 20px;
+border-radius:30px;
+display:flex;
+justify-content:space-between;
+margin-bottom:40px;
+margin-top:40px;
+box-shadow:3px 4px 6px rgba(0,0,0,0.1);
+}
+
+/* GRID */
+.grid-pagamento{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+}
+
+/* OPÇÕES */
+.opcao {
+text-decoration: none; /* remove o sublinhado */
+  color: black;          /* muda a cor do texto */
+  display: block;
+  background: #e5ccaa;
+  padding: 12px 18px;
+  border-radius: 25px;
+  margin: 10px 0;
+  cursor: pointer;
+  box-shadow: 3px 4px 6px rgba(0,0,0,0.12);
+ 
+}
+
+.opcao input{
+margin-right:10px;
+}
+
+/* SUB BLOCO */
+.sub-bloco{
+background:#f3edd5;
+padding:12px;
+border-radius:15px;
+margin-top:10px;
+box-shadow:2px 3px 5px rgba(0,0,0,0.1);
+}
+
+/* FRETE */
+.frete{
+text-align:center;
+margin-bottom:30px;
+}
+
+.frete input{
+width:100%;
+max-width:300px;
+border:none;
+border-bottom:2px solid #7a6a58;
+background:transparent;
+padding:8px;
+margin:10px 0;
+}
+
+.frete button{
+background:#f0d7b5;
+border:2px solid #d89b3c;
+border-radius:12px;
+padding:8px 25px;
+cursor:pointer;
+}
+
+/* RESUMO */
+.resumo{
+background:#e5ccaa;
+border-radius:28px;
+padding:20px 30px;
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+box-shadow:4px 6px 8px rgba(0,0,0,0.08);
+margin-bottom:30px;
+}
+
+.total{
+border-top:2px solid #7a6a58;
+padding-top:10px;
+font-weight:bold;
+}
+
+.endereco-box{
+margin-top:10px;
+background:#f3edd5;
+border:2px solid #8e8377;
+padding:8px 14px;
+border-radius:16px;
+font-size:14px;
+display:inline-block;
+}
+
+/* BOTÃO FINAL */
+.finalizar{
+display:block;
+margin:auto;
+width:230px;
+height:45px;
+border:none;
+border-radius:10px;
+background:#e19a1e;
+font-size:18px;
+cursor:pointer;
+box-shadow:3px 4px 6px rgba(0,0,0,0.12);
+margin-top: 30px;
+margin-bottom: 30px
+}
+.finalizar a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* FOOTER */
+footer{
+background:#dcc29f;
+padding:22px 15px;
+margin-top:20px;
+}
+
+.beneficios{
+display:flex;
+justify-content:space-around;
+align-items:center;
+gap:15px;
+margin-bottom:18px;
+flex-wrap:wrap;
+}
+
+.item{
+display:flex;
+align-items:center;
+gap:10px;
+max-width:250px;
+}
+
+.item img{
+width:38px;
+height:38px;
+object-fit:contain;
+}
+
+.item strong{
+font-size:16px;
+font-weight:500;
+display:block;
+}
+
+.item p{
+font-size:11px;
+margin-top:2px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #000;  
+  margin: 10px 0;    
+}
+.footer-conteudo{
+display:flex;
+justify-content:space-around;
+gap:30px;
+font-size:12px;
+flex-wrap:wrap;
+}
+
+.footer-conteudo h3{
+font-size:16px;
+font-weight:500;
+margin-bottom:10px;
+}
+
+.footer-conteudo p{
+margin-bottom:6px;
+}
+
+.icones{
+display:flex;
+gap:15px;
+margin-top:12px;
+align-items:center;
+}
+
+.icones img{
+width:32px;
+height:32px;
+object-fit:contain;
+cursor:pointer;
+transition:0.3s;
+}
+
+.icones img:hover{
+transform:scale(1.1);
+}
+
+@media(max-width:700px){
+
+.logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:50%;
+display:block;
+}
+
+.beneficios,
+.footer-conteudo{
+flex-direction:column;
+text-align:center;
+}
+
+.item{
+justify-content:center;
+}
+
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+
+.grid-pagamento{
+grid-template-columns:1fr;
+}
+
+}

@@ -1,0 +1,243 @@
+/* IMPORTAÇÃO DA FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100..900&display=swap');
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Fonte*/
+body {
+  font-family: 'Anybody', sans-serif;
+}
+/* FUNDO */
+body {
+     background-color: #FDF2D9;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #BD7D43;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.icons .active {
+    border-bottom: 2px solid black;
+}
+
+.icons img {
+    width: 25px;
+    margin-left: 15px;
+}
+/*CAIXA*/
+.caixa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 100px);
+  gap: 100px;
+}
+
+.dadoscartao {
+  max-width: 600px;
+  min-height: 450px;          
+  margin: 50px auto;
+  background: #FFF7DD;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  font-family: 'Anybody', sans-serif;
+  font-weight: 400;
+}
+
+/* Títulos */
+.dadoscartao h2 {
+  font-size: 20px;
+  margin-bottom: 15px;  
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+}
+
+.dadoscartao h3 {
+  font-size: 16px;
+  margin: 15px 0;      
+  color: #333;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Ícones de formas de pagamento */
+.formas {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;    
+}
+
+.formas img {
+  height: 20px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+
+/* Ícones */
+.formas img {
+  height: 20px;
+  margin-left: 10px;
+  float: right;
+}
+
+/* Inputs */
+#numero, #datadevalidade, #cvc, #nome {
+  background-color: #EBE3CA;
+  border: 1px solid #612525;
+  border-radius: 8px;
+  margin: 10px auto;
+  width: 90%;                
+  height: 35px;
+  padding: 8px;
+  font-family: 'Anybody', sans-serif;
+  font-weight: 400;
+  display: block;
+}
+
+/* Botão */
+#salvar{
+  background: #E69923;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#salvar:hover {
+  background: #BD7D43;
+  transform: scale(1.05);
+}
+/* FOOTER */
+footer{
+background:#dcc29f;
+padding:22px 15px;
+margin-top:20px;
+}
+
+.beneficios{
+display:flex;
+justify-content:space-around;
+align-items:center;
+gap:15px;
+margin-bottom:18px;
+flex-wrap:wrap;
+}
+
+.item{
+display:flex;
+align-items:center;
+gap:10px;
+max-width:250px;
+}
+
+.item img{
+width:38px;
+height:38px;
+object-fit:contain;
+}
+
+.item strong{
+font-size:16px;
+font-weight:500;
+display:block;
+}
+
+.item p{
+font-size:11px;
+margin-top:2px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #000;  
+  margin: 10px 0;    
+}
+.footer-conteudo{
+display:flex;
+justify-content:space-around;
+gap:30px;
+font-size:12px;
+flex-wrap:wrap;
+}
+
+.footer-conteudo h3{
+font-size:16px;
+font-weight:500;
+margin-bottom:10px;
+}
+
+.footer-conteudo p{
+margin-bottom:6px;
+}
+
+.icones{
+display:flex;
+gap:15px;
+margin-top:12px;
+align-items:center;
+}
+
+.icones img{
+width:32px;
+height:32px;
+object-fit:contain;
+cursor:pointer;
+transition:0.3s;
+}
+
+.icones img:hover{
+transform:scale(1.1);
+}
+
+@media(max-width:700px){
+
+.logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:50%;
+display:block;
+}
+
+.beneficios,
+.footer-conteudo{
+flex-direction:column;
+text-align:center;
+}
+
+.item{
+justify-content:center;
+}
+
+}
